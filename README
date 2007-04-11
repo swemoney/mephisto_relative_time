@@ -1,0 +1,25 @@
+mephisto_relative_time
+======================
+
+If you have a date but don't want to display it all ugly like in your blog, 
+this filter will let you convert that date to a 'real words' representation.
+
+installation
+============
+
+    script/plugin install -x http://svn.dnite.org/mephisto_relative_time
+
+of course, you don't need the -x, but if your using svn, you might as well 
+add this to your externals so you always have to latest and greatest version.
+Don't forget to restart mephisto to get this plugin to enable itself.
+
+usage
+=====
+
+Using this filter is easy. The following are a few examples.
+
+    Something happened {{ date_variable | relative_time_ago }} ago.
+    My birthday was {{ "2006-07-17" | relative_time_ago }} ago.
+    My birthday is in {{ "2007-07-17" | relative_time_to }}!
+
+That easy. Enjoy!
